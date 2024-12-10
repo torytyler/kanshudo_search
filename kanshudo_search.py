@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import sys
 
 def get_kanshudo_examples(kanji):
     # Encode the kanji for URL
