@@ -130,7 +130,7 @@ def display_examples(examples):
         if end_index >= len(examples):
             break
         
-        print("\nPress any key to see more examples, Escape to quit, or Enter to search for new sentences.")
+        print("\nPress any key to see more examples, or Escape to return.")
         char = read_char()
         
         # Handle the key press
@@ -183,7 +183,7 @@ def main():
         all_examples = get_kanshudo_examples(kanji)
         
         if not all_examples:
-            print("No example sentences found. Press any key to search again or Enter to quit.")
+            print("No example sentences found. Press any key to quit.")
             char = read_char()
             if char == 'ENTER':
                 clear_screen()
